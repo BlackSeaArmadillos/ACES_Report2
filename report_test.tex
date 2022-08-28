@@ -1,0 +1,35 @@
+\documentclass[twoside]{romjist}
+\usepackage{mystyle}
+
+\begin{document}
+
+
+    \issuevolume{1}%set volume
+    \issuenumber{1}%set number
+    \issueyear{2022}%set year
+    \issuepages{XXX--XXX}%set pages
+
+    \headauthors{M.P. Firtala}%short author string, for placement in heading
+    \headtitle{Dissertation Report}%short title string, for placement in heading
+    
+    % Article top matter (title, authors)
+    \title{Dissertation Report: A review and comparison of the open-source and
+commercial soft-core processors}%full title string
+
+    \author[1]{Mihai Paul \uppercase{Firtala}}%set name of first author and superscript of affiliation mark
+    % \author[2, *]{Mary \uppercase{Exampleb}}
+
+    \affil[1]{{\small Politehnica University of Bucharest, Faculty of Electronics, Telecommunications and Information Technology}}%affiliation for superscript mark
+    \affil[ ]{ {\small \texttt {Email: mihai\underline{\hspace{.1 in}}paul.firtala@stud.aero.upb.ro$^*$}}}%optionally, set email underneath affiliation, leave mark blank
+    % \affil[ ]{{ \small $^*$ Corresponding author}}
+    
+    % etc., as many authors as required
+
+    % always issue maketitle before abstract
+    \maketitle
+
+\input{src/abstract.tex}
+
+
+
+\end{document}
