@@ -1,0 +1,126 @@
+\hspace{0.5cm} The multitude of soft processors available online allow the users to choose the best
+solution suitable for their projects. In this chapter we will explore in depth these processors,
+provide a comparison in the form of a table and we will highlight the important features in
+terms of performance and availability.
+
+\subsection{Open-source processors}
+
+\hspace{0.5cm} In this subsection we will explore the open-source soft processors available to the
+individuals or companies without a paid fee due to the accompanied license. The lack of an
+accepted open-source hardware license determined the use of software licenses such as GNU
+LGPL, GNU GPL or BSD. A large number of processors can be found on github or published 
+on the OpenCores.org website. As stated in the wikipedia page \cite{11}, the Open Cores is a
+community formed by individuals, universities or companies that develop open source
+hardware components by using electronic design automation (EDA) tools similar to how
+open source software is produced. The community comes up with a large variety and number
+of processors each having distinct and important features that are worth mentioning in this
+paper such as Amber, pAVR, Leon2/3/4 and BERI.
+
+\hspace{0.5cm} \textbf{Amber} is an open source 32-bit RISC processor based on the ARM architecture based on the ARMv2a instruction set, made by Conor Santifort. The processor is compatible with the
+ARMv2a instruction set, therefore it can be implemented without an ARM license being
+supported by the GNU toolset. The project is available for download on OpenCores.org and
+is part of the open-source hardware movement which aims to develop libraries that can be
+used in projects for free \cite{3}. According to the website, it was created in 2010 and was
+updated several times, the final one being in 2019, which resulted in a stable version. The
+processor was developed in Verilog 2001 and implemented on the Xilinx Spartan 6 SP605
+FPGA development board being optimized for FPGAs and provides a complete embedded
+system including the core and several peripherals such as UART, timers and Ethernet MAC.
+There is no reset logic, all registers being reset as part of FPGA initialization. Two versions
+of the core were developed as part of the Amber project. The Amber 23 was designed with a
+3-stage pipeline, a unified instruction and data cache, a 32-bit wishbone interface and is
+capable of 0.75 DMIPS / MHz. Register based instructions execute in a single cycle, except
+for instructions involving multiplication. Load and store instructions require three cycles. The
+Amber 25 has a 5-stage pipeline, separate data and instruction caches, a 128-bit Wishbone
+interface, and is capable of 1.05 DMIPS / MHz. Both cores implement the same ISA and are
+software compatible. They do not contain a memory management unit so they can only run
+the non-virtual memory variant of Linux and they have been verified by booting a 2.4 Linux
+kernel. \cite{3}\cite{6}
+
+\hspace{0.5cm} \textbf{pAVR} is an AVR architecture compatible 8-bit microcontroller designed in VHDL by
+Doru Cuturela. It is a general representation of an AVR microcontroller which can be
+configured to simulate most of the AVR family members. The core was originally designed
+to obtain a powerful processor in terms of MIPS and concluded in a core 3x faster than the
+original AVR core. The pAVR is an easily maintainable and highly customizable design due
+to its modularity, code writing techniques and documentation. It has a 6-stage pipeline with 1
+clock per instruction at peak (1.7 CPI typical) for most instructions, an estimated clock
+frequency of 50 MHz with 28 MIPS or 50 MIPS at peak (meanwhile the Atmel’s cores run at
+15-16 MHz with 10 MIPS). According to the Open Cores website the project was finished in
+the summer of 2002 and was updated a few times with the current status being “Alpha” due
+to the newly discovered bugs. \cite{7}
+
+\hspace{0.5cm} \textbf{Leon2} is a 32-bit processor model compatible with the SPARC V8 architecture created by the European Space Agency (ESA) and written in VHDL. It is a configurable core due to
+its modularity and has separate instruction and data caches, hardware multiplier and divider,
+interrupt controller, debug support unit with trace buffer, 2x24-bit timers, 2xUART, power
+down function, watchdog and 16-bit I/O ports. The model is synthesizable with most tools
+and can be implemented on ASICs and FPGAs.
+Leon2-FT was designed as a radiation tolerant processor to be included in the spacecraft’s
+on-board computer and is the fault tolerant version of the Leon2 implementing features like triple modular redundancy for the flip-flops and protection for all the internal and external
+memories, using EDAC and parity bits. During a mission in outer space, the cosmic radiation
+may affect the data storage or data exchange between the various components by introducing
+single event upset (SEU) errors. These events appear due to the ionized particles striking
+nodes of logic elements and randomly changing bits, in a way that may prevent the proper
+functionality of the system and thus concluding to the mission failure. The processor design
+incorporates advanced error detection and correction (EDAC) techniques that enable reliable
+delivery of data over unreliable communication channels in order to withstand arbitrary SEU
+errors that may cause the unwanted loss of data. The processor was used in two satellite
+missions: ESA’s Intermediate eXperimental Vehicle (IXV) and China’s Chang’e 4 lunar
+lander. \cite{8}\cite{9}
+
+\hspace{0.5cm} \textbf{Leon3}, just like Leon2, is a synthesizable VHDL, 32-bit, SPARC V8 compatible soft
+processor and it is highly configurable. One major difference between the two processors is
+the number of pipeline stages: Leon3 has 7 stages while Leon2 has 5. It is based on a Harvard
+architecture by having separate instruction and data cache, containing features like hardware
+multiply/divide, MAC units, memory management unit, AMBA 2.0 AHB bus interface,
+provide debug capabilities, a maximum of 125 MHz on FPGA and 400 MHz on ASIC
+technologies and a performance of 1.4 DMIPS/MHz. Leon3-FT is the fault tolerant version of
+the Leon3 processor and includes similar methods for overcoming the single-event-upset
+(SEU) errors as Leon2-FT. Additional features of the Leon3-FT compared to the Leon3 are
+register file SEU error correction with 4 errors per 32-bit word, cache memory error
+correction, autonomous error handling and no timing impact due to error correction and
+detection. \cite{9}\cite{10}
+
+\hspace{0.5cm} \textbf{BERI} (Bluespec Extensible RISC Implementation) is a soft-core processor implementing
+64-bit RISC instruction set and designed by the University of Cambridge and SRI
+International using Bluespec System Verilog which is a high-level functional programming
+language for describing hardware designs. The processor implements a floating-point unit
+(FPU), programmable interrupt controller (PIC) and multicore operation (still in progress)
+and is able to boot the FreeBSD operating system which supports multitasking, TCP/IP
+networking, security features and third party open-source applications. The processor was
+tested on a Terasic DE4 board at 100 MHz, with CPI close to 1.0. The processor is used
+mainly in research purposes such as processor multithreading, verification and other
+instruction set level experimentations and the source code is available on the project website
+also provided in \cite{4}.
+
+\subsection{Commercial platforms}
+
+\hspace{0.5cm} Commercial soft processors are available under a proprietary license that has to be
+purchased in order to be used in a proprietary product. The vendors contributed to the soft
+processor’s world with revolutionary designs.
+
+\hspace{0.5cm} \textbf{Cortex M1} is the first ARM processor designed to be implemented on a FPGA and
+includes support for synthesis tools. It is a 32-bit processor compatible with ARMv6-M
+architecture based on the Thumb and Thumb2 instruction set with a 3-stage pipeline and
+debug capabilities. As important features we can count the 0.88 DMIPS/MHz. The processor is supported by many FPGA boards such as Altera’s Cyclone and Stratix series, Xilinx
+Spartan-3, Virtex-2,3,4 and Artix-7 and Microchip Fusion, ProASIC3L and other boards.
+
+\hspace{0.5cm} \textbf{Nios II} is a 32-bit RISC processor designed specifically for the Altera FPGA family. It is
+suitable for a wide range of embedded applications such as digital signal processing (DSP) or
+system control. The processor is highly configurable by adding a predefined memory
+management unit or by defining custom instructions or custom peripherals. The processor
+family comes in different variants Nios II classic (fast, standard and economy) and Nios II
+gen2 (fast and economy) each having specific features. Nios II/s (standard) version is a 5-
+stage pipeline processor, with up to 256 custom instructions that can be defined by the user,
+having a JTAG debug module which may include hardware breakpoints or real-time trace
+with a performance of 250 MIPS.
+
+\hspace{0.5cm}  \textbf{PowerPC 440} is a 32-bit RISC processor core belonging to the Power PC family and
+based on the Power ISA instruction set. It was designed to be used in various applications
+such as SoC microcontrollers, television decoders, network appliances, ASICs and FPGAs
+applications, storage devices and supercomputers. It is a high-performance processor with a
+7-stage pipeline, memory caches, with speeds up to 800 MHz. Xilinx Virtex-5 FXT FPGA
+board can support 2 PowerPC 440 cores obtaining a frequency of 550 MHz. BRE440 Rad
+Hard SOC includes an IBM licensed PowerPC 440 core and is designed to be used in
+radiation-rich environments for deep space, nuclear, defense and medical applications. The
+processor includes an FPU, memory controllers, cache, ethernet ports, serial ports, DMA
+channels, EDAC controller and PCI interface supporting a speed of 133 MHz and 2
+MIPS/MHz.

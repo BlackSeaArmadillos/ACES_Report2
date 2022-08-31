@@ -1,0 +1,39 @@
+\hspace{0.5cm} Embedded systems are complex systems containing hardware and software which are used to
+process input data from the outside world into signals that usually control a machine. Our
+daily life is filled with similar systems, from the simple ones controlling a washing machine
+or a refrigerator to the more complex ones used as on-board computers for satellites, planes
+and cars.
+An embedded system contains one or more microcontroller units (MCUs), memories and
+input/output peripheral devices (sensors) and are used to gather(input) data from the exterior
+world, be it sound, light, magnetic field or acceleration forces, and output them as control
+signals usually used to drive an actuator or to display information. The data processing is
+performed by the microcontroller by executing the program stored in the memory. Since the
+first commercial field programmable gate array (FPGA) became available in 1985 and with
+the advance of modern technology, the performance has increased in such a manner that
+nowadays it is possible and more convenient to simulate a fully functioning microprocessor
+together with its peripherals on an FPGA board before the manufacturing process begins.
+
+\subsection{Related works}
+\hspace{0.5cm} The “Soft processors as a prospective platform of the future” presents important aspects
+about the soft CPUs compared to the general-purpose CPUs and to the ASIC based
+processors. The paper concludes by mentioning that the modern FPGAs are the most
+promising platforms for supporting soft CPUs with a wide area of applications such as
+general-purpose products with digital control, tablet and mobile computers, computer
+terminals and personal computers with improved security and reliability. Vivek Jayakrishnan
+and Chirag Parikh compared in their paper \cite{Jayakrishnan2019} the power consumption, speed and resource
+utilization of two SoCs: a soft-core based design composed of a soft ARM Cortex M0
+processor along with custom IP components and a hard-core based design containing a hard
+ARM Cortex A9 processor connected to the IP modules (VGA, I/O, Bus) loaded on the
+FPGA. Both designs run an oscilloscope application which inputs voltage signals via an ADC
+and outputs the scaled values on a display. The study concluded by observing that the hard-
+core design is much faster and utilizes less resources, but the power consumption is higher, in
+contrast to observations made in other studies, maybe due to some features that allow the
+Cortex M0 to set the sleep mode over the unused internal components. A detailed comparison
+of several open-source and commercial soft processors based on their features was made by
+Jason G. Tong, Ian D. L. Anderson and Mohammed A. S. Khalid. They also provided some
+use cases in the industrial and research applications for the selected platforms. Their paper
+was the main source of inspiration and was the most relevant for the initial topic of this
+report.
+The next chapter was realized by combining all the information and knowledge gathered
+from the above-mentioned articles and from topic related websites that are included in the
+reference section.
