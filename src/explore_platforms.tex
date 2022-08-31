@@ -9,7 +9,7 @@ terms of performance and availability.
 individuals or companies without a paid fee due to the accompanied license. The lack of an
 accepted open-source hardware license determined the use of software licenses such as GNU
 LGPL, GNU GPL or BSD. A large number of processors can be found on github or published 
-on the OpenCores.org website. As stated in the wikipedia page \cite{11}, the Open Cores is a
+on the OpenCores.org website. As stated in the wikipedia page \cite{OpenCores}, the Open Cores is a
 community formed by individuals, universities or companies that develop open source
 hardware components by using electronic design automation (EDA) tools similar to how
 open source software is produced. The community comes up with a large variety and number
@@ -20,7 +20,7 @@ paper such as Amber, pAVR, Leon2/3/4 and BERI.
 ARMv2a instruction set, therefore it can be implemented without an ARM license being
 supported by the GNU toolset. The project is available for download on OpenCores.org and
 is part of the open-source hardware movement which aims to develop libraries that can be
-used in projects for free \cite{3}. According to the website, it was created in 2010 and was
+used in projects for free \cite{Amber}. According to the website, it was created in 2010 and was
 updated several times, the final one being in 2019, which resulted in a stable version. The
 processor was developed in Verilog 2001 and implemented on the Xilinx Spartan 6 SP605
 FPGA development board being optimized for FPGAs and provides a complete embedded
@@ -34,7 +34,7 @@ Amber 25 has a 5-stage pipeline, separate data and instruction caches, a 128-bit
 interface, and is capable of 1.05 DMIPS / MHz. Both cores implement the same ISA and are
 software compatible. They do not contain a memory management unit so they can only run
 the non-virtual memory variant of Linux and they have been verified by booting a 2.4 Linux
-kernel. \cite{3}\cite{6}
+kernel. \cite{Amber}\cite{SantifortAmber}
 
 \hspace{0.5cm} \textbf{pAVR} is an AVR architecture compatible 8-bit microcontroller designed in VHDL by
 Doru Cuturela. It is a general representation of an AVR microcontroller which can be
@@ -46,7 +46,7 @@ clock per instruction at peak (1.7 CPI typical) for most instructions, an estima
 frequency of 50 MHz with 28 MIPS or 50 MIPS at peak (meanwhile the Atmel’s cores run at
 15-16 MHz with 10 MIPS). According to the Open Cores website the project was finished in
 the summer of 2002 and was updated a few times with the current status being “Alpha” due
-to the newly discovered bugs. \cite{7}
+to the newly discovered bugs. \cite{CuturelapAVR}
 
 \hspace{0.5cm} \textbf{Leon2} is a 32-bit processor model compatible with the SPARC V8 architecture created by the European Space Agency (ESA) and written in VHDL. It is a configurable core due to
 its modularity and has separate instruction and data caches, hardware multiplier and divider,
@@ -64,7 +64,7 @@ incorporates advanced error detection and correction (EDAC) techniques that enab
 delivery of data over unreliable communication channels in order to withstand arbitrary SEU
 errors that may cause the unwanted loss of data. The processor was used in two satellite
 missions: ESA’s Intermediate eXperimental Vehicle (IXV) and China’s Chang’e 4 lunar
-lander. \cite{8}\cite{9}
+lander. \cite{ESALEON2}\cite{wikiLEON2}
 
 \hspace{0.5cm} \textbf{Leon3}, just like Leon2, is a synthesizable VHDL, 32-bit, SPARC V8 compatible soft
 processor and it is highly configurable. One major difference between the two processors is
@@ -77,7 +77,7 @@ the Leon3 processor and includes similar methods for overcoming the single-event
 (SEU) errors as Leon2-FT. Additional features of the Leon3-FT compared to the Leon3 are
 register file SEU error correction with 4 errors per 32-bit word, cache memory error
 correction, autonomous error handling and no timing impact due to error correction and
-detection. \cite{9}\cite{10}
+detection. \cite{wikiLEON2}\cite{GaislerLEON3FT}
 
 \hspace{0.5cm} \textbf{BERI} (Bluespec Extensible RISC Implementation) is a soft-core processor implementing
 64-bit RISC instruction set and designed by the University of Cambridge and SRI
@@ -89,7 +89,7 @@ networking, security features and third party open-source applications. The proc
 tested on a Terasic DE4 board at 100 MHz, with CPI close to 1.0. The processor is used
 mainly in research purposes such as processor multithreading, verification and other
 instruction set level experimentations and the source code is available on the project website
-also provided in \cite{4}.
+also provided in \cite{CambridgeBERI}.
 
 \subsection{Commercial platforms}
 
