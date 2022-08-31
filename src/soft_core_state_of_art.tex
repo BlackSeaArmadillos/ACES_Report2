@@ -1,0 +1,49 @@
+\hspace{0.5cm} When it comes to the design of an embedded system, a series of approaches can be taken into
+consideration depending on the initial requirements. Cost, computation speed, memory size,
+the environment in which the system will function and other features play an important role
+in the initial design. The final approach needs to be balanced in order to exploit the
+advantages of the chosen solution and to make sure that the disadvantages present an
+insignificant impact. One can implement the system around a hard-core microcontroller
+which is a cheaper approach when it comes to developing complex algorithms in a short
+period of time and when the execution speed and the energy efficiency presents important
+aspects of the project. The control logic is much easier to implement, and a vast set of
+programming skills are available due to the large online community, thus allowing small
+companies and individuals to come up with innovative ideas. A second method that may be
+used for implementation is a system on chip containing a hard processor which combines the
+conventional programmable hard-core microprocessor and an FPGA to exploit the features of
+both elements. An SoC with a soft processor which includes the same hardware as stated in
+the previous point, but the FPGA is used to simulate the behavior of a microprocessor can be
+used as a third method. Let’s further detail this approach in the next rows.
+A soft-core processor is a reusable hardware module \cite{1} whose architecture and behavior can
+be described using a synthesizable HDL code such as VHDL or Verilog, as opposed to the
+hard-core processors which are baked into the silicon. The use of soft processors includes
+considerable advantages:
+
+\begin{itemize}
+    \item Flexibility: the soft processor can be configured and customized (i.e. adding custom
+instructions and/or components such as floating-point units, memory protection units,
+error detection and correction encoders/decoders etc) in order to adapt the system
+based on the user needs.
+    \item Multiple cores: depending on the number of logic cells, the fpga can hold multiple
+cores thus having the possibility of parallelizing some tasks.
+    \item The soft cores are technology independent meaning that they can be loaded on every
+FPGA board, thus they present a high tolerance to obsolescence.
+    \item In the case of an SoC, distinct processes can be divided between the hard and the soft
+CPU.
+    \item Portability: the soft core can be ported to any FPGA, as long as it is not vendor
+specific.
+    \item The architecture and behavior are written at higher abstraction level using a hardware
+description language; therefore it is much easier to understand and to create a design.
+\end{itemize}
+
+Some of the disadvantages of a soft-core processor are represented by the overall high
+cost of an FPGA, lower computation speeds than an MCU due to the FPGA fabric, the higher
+complexity of a hardware description language compared to a programming language such as
+C and the less numerous online community.
+These days a large number of soft processors can be found on the internet, whether it be
+open-source platforms supported by individuals or commercial solutions provided by various
+vendors. In the following chapters we will present in detail the available platforms,
+mentioning important features regarding performance, number of stages, availability,
+required FPGA size, use cases, community etc.., and a comparison between them will be
+made at the end concluding with the most important aspects and the possible directions that
+could be approached in the future works.

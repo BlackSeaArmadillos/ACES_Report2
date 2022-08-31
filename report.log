@@ -1,13 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.28)  28 AUG 2022 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.28)  30 AUG 2022 22:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **report
 (./report.tex
 LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14>
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+L3 programming layer <2020-02-14> (./romjist.cls
+Document Class: romjist 2017/04/26 v1.0 ROMJIST LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
@@ -23,8 +22,6 @@ File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 ) (./mystyle.sty
-Package: mystyle 
-
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -163,6 +160,27 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip56
 \dth@everypar=\toks26
 )
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count193
+\l__pdf_internal_box=\box47
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count194
+\g__xparse_grabber_int=\count195
+\l__xparse_m_args_int=\count196
+\l__xparse_v_nesting_int=\count197
+)
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))
 (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
 Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
 
@@ -215,7 +233,7 @@ e
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box47
+\pgfutil@abb=\box48
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -250,14 +268,14 @@ ex
 \pgf@yd=\dimen165
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count193
-\c@pgf@countb=\count194
-\c@pgf@countc=\count195
-\c@pgf@countd=\count196
+\c@pgf@counta=\count198
+\c@pgf@countb=\count199
+\c@pgf@countc=\count266
+\c@pgf@countd=\count267
 \t@pgf@toka=\toks31
 \t@pgf@tokb=\toks32
 \t@pgf@tokc=\toks33
-\pgf@sys@id@count=\count197
+\pgf@sys@id@count=\count268
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -273,8 +291,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count198
-\pgfsyssoftpath@bigbuffer@items=\count199
+\pgfsyssoftpath@smallbuffer@items=\count269
+\pgfsyssoftpath@bigbuffer@items=\count270
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -304,8 +322,8 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen166
-\pgfmath@count=\count266
-\pgfmath@box=\box48
+\pgfmath@count=\count271
+\pgfmath@box=\box49
 \pgfmath@toks=\toks34
 \pgfmath@stack@operand=\toks35
 \pgfmath@stack@operation=\toks36
@@ -328,7 +346,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count267
+\c@pgfmathroundto@lastzeros=\count272
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
@@ -364,10 +382,10 @@ File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box49
-\pgf@hbox=\box50
-\pgf@layerbox@main=\box51
-\pgf@picture@serial@count=\count268
+\pgfpic=\box50
+\pgf@hbox=\box51
+\pgf@layerbox@main=\box52
+\pgf@picture@serial@count=\count273
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -400,8 +418,8 @@ File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen190
-\pgf@sys@shading@range@num=\count269
-\pgf@shadingcount=\count270
+\pgf@sys@shading@range@num=\count274
+\pgf@shadingcount=\count275
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -409,7 +427,7 @@ File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box52
+\pgfexternal@startupbox=\box53
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -428,7 +446,7 @@ File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box53
+\pgfnodeparttextbox=\box54
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -461,7 +479,7 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count271
+\pgf@plot@mark@count=\count276
 \pgfplotmarksize=\dimen195
 )
 \tikz@lastx=\dimen196
@@ -472,22 +490,22 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikz@lastmovetoy=\dimen257
 \tikzleveldistance=\dimen258
 \tikzsiblingdistance=\dimen259
-\tikz@figbox=\box54
-\tikz@figbox@bg=\box55
-\tikz@tempbox=\box56
-\tikz@tempbox@bg=\box57
-\tikztreelevel=\count272
-\tikznumberofchildren=\count273
-\tikznumberofcurrentchild=\count274
-\tikz@fig@count=\count275
+\tikz@figbox=\box55
+\tikz@figbox@bg=\box56
+\tikz@tempbox=\box57
+\tikz@tempbox@bg=\box58
+\tikztreelevel=\count277
+\tikznumberofchildren=\count278
+\tikznumberofcurrentchild=\count279
+\tikz@fig@count=\count280
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count276
-\pgfmatrixcurrentcolumn=\count277
-\pgf@matrix@numberofcolumns=\count278
+\pgfmatrixcurrentrow=\count281
+\pgfmatrixcurrentcolumn=\count282
+\pgf@matrix@numberofcolumns=\count283
 )
-\tikz@expandcount=\count279
+\tikz@expandcount=\count284
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -503,62 +521,60 @@ File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowwidth=\dimen262
 \pgfarrowlinewidth=\dimen263
 )
-\CF_cntatomgroup=\count280
-\CF_cntgroup=\count281
-\CF_cntatom=\count282
-\CF_cntcycle=\count283
-\CF_cntcompound=\count284
+\CF_cntatomgroup=\count285
+\CF_cntgroup=\count286
+\CF_cntatom=\count287
+\CF_cntcycle=\count288
+\CF_cntcompound=\count289
 \CF_dim=\dimen264
 \CF_arrowsize=\dimen265
 \CF_zero=\dimen266
-\CF_boxlewis=\box58
-\CF_box=\box59
-\CF_boxstuff=\box60
+\CF_boxlewis=\box59
+\CF_box=\box60
+\CF_boxstuff=\box61
 \CF_substtoks=\toks39
 )
 Package: chemfig 2019/05/21 v1.41 Draw molecule with an easy syntax (CT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-02-14 L3 programming layer (loader) 
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count285
-\l__pdf_internal_box=\box61
-))
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2020-02-14 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count286
-\g__xparse_grabber_int=\count287
-\l__xparse_m_args_int=\count288
-\l__xparse_v_nesting_int=\count289
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen267
+\captionmargin@=\dimen268
+\captionwidth=\dimen269
+\caption@tempdima=\dimen270
+\caption@indent=\dimen271
+\caption@parindent=\dimen272
+\caption@hangindent=\dimen273
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
+p \sbox \@tempboxa {\small {#1 #2}}\ifdim \wd \@tempboxa >\hsize \small {#1 #2}
+\par \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa \hfil 
+}\fi \vskip \belowcaptionskip  on input line 1082.
 )
-Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
-(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
-File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-))
-(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-)
-\@indexfile=\write4
-\openout4 = `report.idx'.
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
 
-
-Writing index file report.idx
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+\c@caption@flags=\count290
+\c@continuedfloat=\count291
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count290
+\etb@tempcnta=\count292
 )
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count291
+\lrq@indent=\count293
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -570,47 +586,47 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count292
-\c@listtotal=\count293
-\c@listcount=\count294
-\c@liststart=\count295
-\c@liststop=\count296
-\c@citecount=\count297
-\c@citetotal=\count298
-\c@multicitecount=\count299
-\c@multicitetotal=\count300
-\c@instcount=\count301
-\c@maxnames=\count302
-\c@minnames=\count303
-\c@maxitems=\count304
-\c@minitems=\count305
-\c@citecounter=\count306
-\c@maxcitecounter=\count307
-\c@savedcitecounter=\count308
-\c@uniquelist=\count309
-\c@uniquename=\count310
-\c@refsection=\count311
-\c@refsegment=\count312
-\c@maxextratitle=\count313
-\c@maxextratitleyear=\count314
-\c@maxextraname=\count315
-\c@maxextradate=\count316
-\c@maxextraalpha=\count317
-\c@abbrvpenalty=\count318
-\c@highnamepenalty=\count319
-\c@lownamepenalty=\count320
-\c@maxparens=\count321
-\c@parenlevel=\count322
-\blx@tempcnta=\count323
-\blx@tempcntb=\count324
-\blx@tempcntc=\count325
-\blx@maxsection=\count326
-\blx@maxsegment@0=\count327
-\blx@notetype=\count328
-\blx@parenlevel@text=\count329
-\blx@parenlevel@foot=\count330
-\blx@sectionciteorder@0=\count331
-\blx@entrysetcounter=\count332
+\c@tabx@nest=\count294
+\c@listtotal=\count295
+\c@listcount=\count296
+\c@liststart=\count297
+\c@liststop=\count298
+\c@citecount=\count299
+\c@citetotal=\count300
+\c@multicitecount=\count301
+\c@multicitetotal=\count302
+\c@instcount=\count303
+\c@maxnames=\count304
+\c@minnames=\count305
+\c@maxitems=\count306
+\c@minitems=\count307
+\c@citecounter=\count308
+\c@maxcitecounter=\count309
+\c@savedcitecounter=\count310
+\c@uniquelist=\count311
+\c@uniquename=\count312
+\c@refsection=\count313
+\c@refsegment=\count314
+\c@maxextratitle=\count315
+\c@maxextratitleyear=\count316
+\c@maxextraname=\count317
+\c@maxextradate=\count318
+\c@maxextraalpha=\count319
+\c@abbrvpenalty=\count320
+\c@highnamepenalty=\count321
+\c@lownamepenalty=\count322
+\c@maxparens=\count323
+\c@parenlevel=\count324
+\blx@tempcnta=\count325
+\blx@tempcntb=\count326
+\blx@tempcntc=\count327
+\blx@maxsection=\count328
+\blx@maxsegment@0=\count329
+\blx@notetype=\count330
+\blx@parenlevel@text=\count331
+\blx@parenlevel@foot=\count332
+\blx@sectionciteorder@0=\count333
+\blx@entrysetcounter=\count334
 \labelnumberwidth=\skip57
 \labelalphawidth=\skip58
 \biblabelsep=\skip59
@@ -620,11 +636,11 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibparsep=\skip63
 \bibhang=\skip64
 \blx@bcfin=\read3
-\blx@bcfout=\write5
+\blx@bcfout=\write4
 \blx@langwohyphens=\language85
-\c@mincomprange=\count333
-\c@maxcomprange=\count334
-\c@mincompwidth=\count335
+\c@mincomprange=\count335
+\c@maxcomprange=\count336
+\c@mincompwidth=\count337
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -639,74 +655,74 @@ File: phys.dbx 2019/12/03 v1.1b biblatex database model extension
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count336
-\c@savedafterword=\count337
-\c@annotator=\count338
-\c@savedannotator=\count339
-\c@author=\count340
-\c@savedauthor=\count341
-\c@bookauthor=\count342
-\c@savedbookauthor=\count343
-\c@commentator=\count344
-\c@savedcommentator=\count345
-\c@editor=\count346
-\c@savededitor=\count347
-\c@editora=\count348
-\c@savededitora=\count349
-\c@editorb=\count350
-\c@savededitorb=\count351
-\c@editorc=\count352
-\c@savededitorc=\count353
-\c@foreword=\count354
-\c@savedforeword=\count355
-\c@holder=\count356
-\c@savedholder=\count357
-\c@introduction=\count358
-\c@savedintroduction=\count359
-\c@namea=\count360
-\c@savednamea=\count361
-\c@nameb=\count362
-\c@savednameb=\count363
-\c@namec=\count364
-\c@savednamec=\count365
-\c@translator=\count366
-\c@savedtranslator=\count367
-\c@shortauthor=\count368
-\c@savedshortauthor=\count369
-\c@shorteditor=\count370
-\c@savedshorteditor=\count371
-\c@labelname=\count372
-\c@savedlabelname=\count373
-\c@institution=\count374
-\c@savedinstitution=\count375
-\c@lista=\count376
-\c@savedlista=\count377
-\c@listb=\count378
-\c@savedlistb=\count379
-\c@listc=\count380
-\c@savedlistc=\count381
-\c@listd=\count382
-\c@savedlistd=\count383
-\c@liste=\count384
-\c@savedliste=\count385
-\c@listf=\count386
-\c@savedlistf=\count387
-\c@location=\count388
-\c@savedlocation=\count389
-\c@organization=\count390
-\c@savedorganization=\count391
-\c@origlocation=\count392
-\c@savedoriglocation=\count393
-\c@origpublisher=\count394
-\c@savedorigpublisher=\count395
-\c@publisher=\count396
-\c@savedpublisher=\count397
-\c@language=\count398
-\c@savedlanguage=\count399
-\c@origlanguage=\count400
-\c@savedoriglanguage=\count401
-\c@pageref=\count402
-\c@savedpageref=\count403
+\c@afterword=\count338
+\c@savedafterword=\count339
+\c@annotator=\count340
+\c@savedannotator=\count341
+\c@author=\count342
+\c@savedauthor=\count343
+\c@bookauthor=\count344
+\c@savedbookauthor=\count345
+\c@commentator=\count346
+\c@savedcommentator=\count347
+\c@editor=\count348
+\c@savededitor=\count349
+\c@editora=\count350
+\c@savededitora=\count351
+\c@editorb=\count352
+\c@savededitorb=\count353
+\c@editorc=\count354
+\c@savededitorc=\count355
+\c@foreword=\count356
+\c@savedforeword=\count357
+\c@holder=\count358
+\c@savedholder=\count359
+\c@introduction=\count360
+\c@savedintroduction=\count361
+\c@namea=\count362
+\c@savednamea=\count363
+\c@nameb=\count364
+\c@savednameb=\count365
+\c@namec=\count366
+\c@savednamec=\count367
+\c@translator=\count368
+\c@savedtranslator=\count369
+\c@shortauthor=\count370
+\c@savedshortauthor=\count371
+\c@shorteditor=\count372
+\c@savedshorteditor=\count373
+\c@labelname=\count374
+\c@savedlabelname=\count375
+\c@institution=\count376
+\c@savedinstitution=\count377
+\c@lista=\count378
+\c@savedlista=\count379
+\c@listb=\count380
+\c@savedlistb=\count381
+\c@listc=\count382
+\c@savedlistc=\count383
+\c@listd=\count384
+\c@savedlistd=\count385
+\c@liste=\count386
+\c@savedliste=\count387
+\c@listf=\count388
+\c@savedlistf=\count389
+\c@location=\count390
+\c@savedlocation=\count391
+\c@organization=\count392
+\c@savedorganization=\count393
+\c@origlocation=\count394
+\c@savedoriglocation=\count395
+\c@origpublisher=\count396
+\c@savedorigpublisher=\count397
+\c@publisher=\count398
+\c@savedpublisher=\count399
+\c@language=\count400
+\c@savedlanguage=\count401
+\c@origlanguage=\count402
+\c@savedoriglanguage=\count403
+\c@pageref=\count404
+\c@savedpageref=\count405
 \shorthandwidth=\skip65
 \shortjournalwidth=\skip66
 \shortserieswidth=\skip67
@@ -742,19 +758,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count404
-\c@textcitetotal=\count405
-\c@textcitemaxnames=\count406
-\c@biburlbigbreakpenalty=\count407
-\c@biburlbreakpenalty=\count408
-\c@biburlnumpenalty=\count409
-\c@biburlucpenalty=\count410
-\c@biburllcpenalty=\count411
+\c@textcitecount=\count406
+\c@textcitetotal=\count407
+\c@textcitemaxnames=\count408
+\c@biburlbigbreakpenalty=\count409
+\c@biburlbreakpenalty=\count410
+\c@biburlnumpenalty=\count411
+\c@biburlucpenalty=\count412
+\c@biburllcpenalty=\count413
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count412
+\c@smartand=\count414
 )
 Package biblatex Info: Trying to load bibliography style 'phys'...
 Package biblatex Info: ... file 'phys.bbx' found.
@@ -776,8 +792,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count413
-\c@bbx:relatedtotal=\count414
+\c@bbx:relatedcount=\count415
+\c@bbx:relatedtotal=\count416
 ))))
 Package biblatex Info: Trying to load citation style 'phys'...
 Package biblatex Info: ... file 'phys.cbx' found.
@@ -789,8 +805,8 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count415
-\c@cbx@tempcntb=\count416
+\c@cbx@tempcnta=\count417
+\c@cbx@tempcntb=\count418
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -809,28 +825,29 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )))
-\@quotelevel=\count417
-\@quotereset=\count418
- (./report.aux)
+\@quotelevel=\count419
+\@quotereset=\count420
+
+No file report.aux.
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7
 .
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -840,21 +857,21 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(106.41345pt, 401.18372pt, 106.69783pt)
-* v-part:(T,H,B)=(122.34692pt, 510.44244pt, 162.18062pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=401.18372pt
-* \textheight=510.44244pt
+* modes: twoside 
+* h-part:(L,W,R)=(106.41345pt, 384.39659pt, 106.69783pt)
+* v-part:(T,H,B)=(122.34692pt, 560.5193pt, 162.18062pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=384.39659pt
+* \textheight=560.5193pt
 * \oddsidemargin=34.14346pt
-* \evensidemargin=34.14346pt
+* \evensidemargin=34.42784pt
 * \topmargin=13.07693pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
+* \marginparwidth=111.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -862,25 +879,27 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count419
-\scratchdimen=\dimen267
+\scratchcounter=\count421
+\scratchdimen=\dimen274
 \scratchbox=\box62
-\nofMPsegments=\count420
-\nofMParguments=\count421
+\nofMPsegments=\count422
+\nofMParguments=\count423
 \everyMPshowfont=\toks40
-\MPscratchCnt=\count422
-\MPscratchDim=\dimen268
-\MPnumerator=\count423
-\makeMPintoPDFobject=\count424
+\MPscratchCnt=\count424
+\MPscratchDim=\dimen275
+\MPnumerator=\count425
+\makeMPintoPDFobject=\count426
 \everyMPtoPDFconversion=\toks41
 ) ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -893,52 +912,133 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Input encoding 'utf8' specified.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-\openout5 = `report-blx.bib'.
+\openout4 = `report-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'report.bbl' not found.
 
 No file report.bbl.
-Package biblatex Info: Reference section=0 on input line 3.
-Package biblatex Info: Reference segment=0 on input line 3.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+Package biblatex Info: Reference section=0 on input line 7.
+Package biblatex Info: Reference segment=0 on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 4
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 9
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) (./src/abstract.tex) [1
+) (./src/abstract.tex) (./src/introduction.tex [1{/var/lib/texmf/fonts/map/pdft
+ex/updmap/pdftex.map}]
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./report.aux)
+LaTeX Warning: Citation 'Jayakrishnan2019' on page 2 undefined on input line 23
+.
+
+) (./src/soft_core_state_of_art.tex
+
+LaTeX Warning: Citation '1' on page 2 undefined on input line 17.
+
+[2]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+3.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+))
+(./src/explore_platforms.tex
+
+LaTeX Warning: Citation '11' on page 3 undefined on input line 12.
+
+[3]
+
+LaTeX Warning: Citation '3' on page 4 undefined on input line 23.
+
+
+LaTeX Warning: Citation '3' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation '6' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation '7' on page 4 undefined on input line 49.
+
+
+LaTeX Warning: Citation '8' on page 4 undefined on input line 67.
+
+
+LaTeX Warning: Citation '9' on page 4 undefined on input line 67.
+
+
+Underfull \vbox (badness 4303) has occurred while \output is active []
+
+ [4]
+
+LaTeX Warning: Citation '9' on page 5 undefined on input line 80.
+
+
+LaTeX Warning: Citation '10' on page 5 undefined on input line 80.
+
+
+LaTeX Warning: Citation '4' on page 5 undefined on input line 92.
+
+[5]) (./src/comparison.tex) (./src/conclusion.tex) (./src/paper_lists.tex
+Overfull \hbox (0.10088pt too wide) in paragraph at lines 3--5
+[]\OT1/ptm/m/n/10 \Embedded Pro-ces-sors on FPGA: Soft vs Hard", by Vivek Jayak
+r-ish-nan and Chi-rag Parikh,
+ []
+
+
+Overfull \hbox (0.63994pt too wide) in paragraph at lines 5--7
+[]\OT1/ptm/m/n/10 \The Mi-croar-chi-tec-ture of FPGA-Based Soft Pro-ces-sors", 
+by Pe-ter Yian-na-couras, Jonathan
+ []
+
+[6] [7]) (./src/references.tex
+Overfull \hbox (117.72304pt too wide) in paragraph at lines 17--18
+[]\OT1/ptm/m/it/9 LEON2FT, Eu-ro-pean Space Agency\OT1/ptm/m/n/9 . https://www.
+esa.int/Enabling[]Support/Space[]Engineering[]Technology/Microelectronics/LEON2
+-
+ []
+
+) [8] (./report.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                report
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22126 strings out of 481239
- 433034 string characters out of 5920377
- 961790 words of memory out of 5000000
- 36996 multiletter control sequences out of 15000+600000
- 549239 words of font info for 65 fonts, out of 8000000 for 9000
+ 23470 strings out of 481239
+ 457343 string characters out of 5920377
+ 982202 words of memory out of 5000000
+ 38307 multiletter control sequences out of 15000+600000
+ 560397 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,5n,75p,839b,743s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 76i,8n,75p,823b,1103s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmr8a.pfb>
-Output written on report.pdf (1 page, 40428 bytes).
+utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (8 pages, 94310 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
